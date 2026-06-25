@@ -125,32 +125,32 @@ export default function CheckoutPage() {
                         <label className="block text-xs font-medium text-gray-600 mb-1.5">পূর্ণ নাম *</label>
                         <input required value={form.name} onChange={e => setForm({...form, name: e.target.value})}
                           placeholder="আপনার নাম"
-                          className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300" />
+                          className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm text-gray-900 font-medium placeholder:text-gray-300 focus:outline-none focus:ring-2 focus:ring-rose-300" />
                       </div>
                       <div>
                         <label className="block text-xs font-medium text-gray-600 mb-1.5">Phone *</label>
                         <input required value={form.phone} onChange={e => setForm({...form, phone: e.target.value})}
                           placeholder="01XXXXXXXXX" type="tel"
-                          className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300" />
+                          className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm text-gray-900 font-medium placeholder:text-gray-300 focus:outline-none focus:ring-2 focus:ring-rose-300" />
                       </div>
                     </div>
                     <div>
                       <label className="block text-xs font-medium text-gray-600 mb-1.5">বাড়ি/রাস্তার ঠিকানা *</label>
                       <input required value={form.address} onChange={e => setForm({...form, address: e.target.value})}
                         placeholder="বাড়ি নং, রাস্তা, এলাকা"
-                        className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300" />
+                        className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm text-gray-900 font-medium placeholder:text-gray-300 focus:outline-none focus:ring-2 focus:ring-rose-300" />
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs font-medium text-gray-600 mb-1.5">শহর *</label>
                         <input required value={form.city} onChange={e => setForm({...form, city: e.target.value})}
                           placeholder="যেমন: Mirpur, Dhanmondi"
-                          className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300" />
+                          className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm text-gray-900 font-medium placeholder:text-gray-300 focus:outline-none focus:ring-2 focus:ring-rose-300" />
                       </div>
                       <div>
                         <label className="block text-xs font-medium text-gray-600 mb-1.5">জেলা *</label>
                         <select value={form.district} onChange={e => setForm({...form, district: e.target.value})}
-                          className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300">
+                          className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm text-gray-900 font-medium focus:outline-none focus:ring-2 focus:ring-rose-300">
                           {districts.map(d => <option key={d}>{d}</option>)}
                         </select>
                       </div>
@@ -160,7 +160,7 @@ export default function CheckoutPage() {
                       <textarea value={form.notes} onChange={e => setForm({...form, notes: e.target.value})}
                         placeholder="যেমন: সন্ধ্যার পরে deliver করুন"
                         rows={2}
-                        className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300 resize-none" />
+                        className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm text-gray-900 font-medium placeholder:text-gray-300 focus:outline-none focus:ring-2 focus:ring-rose-300 resize-none" />
                     </div>
                     <button type="submit"
                       className="w-full bg-rose-500 text-white py-3.5 rounded-xl font-medium hover:bg-rose-600 transition-colors">
